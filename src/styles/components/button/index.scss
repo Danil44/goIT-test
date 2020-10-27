@@ -1,0 +1,11 @@
+.button {
+  font-family: "Montserrat";
+  color: $base-white;
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+
+  &:focus {
+    outline: none;
+  }
+}

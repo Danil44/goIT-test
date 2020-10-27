@@ -1,0 +1,91 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1096px;
+  margin: 0 auto;
+  margin-bottom: 164px;
+
+  @media (max-width: 1366px) {
+    margin-bottom: 82px;
+    width: auto;
+    padding: 0 15px;
+  }
+
+  &__tools {
+    display: flex;
+  }
+
+  &__logo {
+    flex: 1 1;
+
+    @media (max-width: 1366px) {
+      position: absolute;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1;
+    transition: $base-transition;
+
+    @media (min-width: 1366px) {
+      margin-right: 52px;
+    }
+
+    @media (max-width: 1366px) {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: $base-white;
+    }
+
+    &--hidden {
+      @media (max-width: 1366px) {
+        transform: translateX(-100%);
+      }
+    }
+  }
+
+  &__item {
+    @media (max-width: 1366px) {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__link {
+    color: $base-white;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 12px;
+    transition: $base-transition;
+
+    @media (max-width: 1366px) {
+      color: $base-dark;
+    }
+
+    &:hover {
+      border-color: $base-yellow;
+      color: $base-yellow;
+    }
+  }
+
+  &__basket {
+    margin-right: 42px;
+
+    @media (max-width: 1366px) {
+      margin-right: 18px;
+    }
+  }
+}

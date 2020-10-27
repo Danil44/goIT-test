@@ -1,0 +1,49 @@
+.footer {
+  width: $team-section-width;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 11px;
+
+  @media (max-width: 1366px) {
+    width: auto;
+    padding: 0 10px 11px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    padding: 0 70px 0;
+  }
+
+  &__subscribe-form {
+    display: flex;
+    @media (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
+      margin-bottom: 60px;
+    }
+
+    & > .subscribe-form__input {
+      padding: 14px 13px;
+
+      @media (max-width: 768px) {
+        margin-bottom: 16px;
+      }
+    }
+
+    & > .subscribe-form__button {
+      background-color: $base-green;
+      padding: 0 34px;
+      font-family: "Montserrat";
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: 0;
+
+      @media (max-width: 768px) {
+        padding: 18px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.burger-menu {
+  cursor: pointer;
+
+  &__icon {
+    transition: $base-transition;
+    fill: $base-white;
+  }
+}

@@ -1,0 +1,22 @@
+.socials {
+  &__item {
+    transition: $base-transition;
+    background-color: $base-yellow;
+
+    &:hover {
+      background-color: $base-pink;
+    }
+
+    &:hover .socials__icon {
+      fill: $base-white;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+  }
+
+  &__icon {
+    fill: $base-pink;
+  }
+}
